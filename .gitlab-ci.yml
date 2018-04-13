@@ -1,0 +1,11 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - test
+
+test:hello:
+  stage: test
+  image: ubuntu:16.04
+  script: |
+    echo "Howdy World"
